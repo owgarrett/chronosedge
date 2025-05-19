@@ -1,11 +1,13 @@
-symbols:
-  crypto: ["BTCUSDT", "ETHUSDT"]
-data:
-  crypto_api: "https://api.binance.com/api/v3/klines"
-  interval: "1m"
-  limit: 1000
-paths:
-  raw_crypto: "./data/crypto_raw/"
-  processed: "./data/processed/"
 logging:
-  level: "INFO"
+  level: INFO
+
+paths:
+  raw_crypto: data/raw_crypto/       # whatever you like
+
+data:
+  crypto_api: https://api.binance.com/api/v3/klines
+  interval: 1h
+  limit: 500
+
+symbols:
+  crypto: [BTCUSDT, ETHUSDT]
