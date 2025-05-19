@@ -1,3 +1,5 @@
+import sys, pathlib
+sys.path.append(str(pathlib.Path(__file__).resolve().parents[1]))
 import os, pandas as pd, joblib, streamlit as st
 from sklearn.linear_model import LogisticRegression
 from ingestion.fetch_binance import fetch_binance           # already in your repo
